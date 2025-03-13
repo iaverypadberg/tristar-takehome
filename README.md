@@ -26,13 +26,17 @@ My intuition says that this would hurt the model, as its a blurring and we're lo
 #### Image sharpening
 Helpful for enhancing image features and useful to test here as it similar to CLAHE
 
-Normal Image/CLAHE Image
+Normal Image/Sharpness Image
+
+#### Reinhard Color normalization
+ 
+This could be really useful for improving the models performance on this dataset as its goal is to standardize colors across the samples in the dataset. Since there is quite a large variance in the skin tone, lighting,
 
 ![alt text](assets/sample_0_normal.png "Normal") ![alt text](assets/sample_0_sharpness.png "CLAHE") 
 
 ## Approach
 
-To establish baseline performance I trained a YOLO classification. While the image augmentations and various hyperparameters used to train this model are not optimized, most of the augmentations in there beneficial. I left them all in to make things a bit easier.
+To establish baseline performance I trained a YOLO classification model. While the image augmentations and various hyperparameters used to train this model are not optimized, most of the augmentations in there beneficial. I left them all in to make things a bit easier.
 
 Example of Yolo Augmentations
 
@@ -112,4 +116,7 @@ After looking at the data a little bit more, I realized that the most important 
 All the models used here are pre-trained on standard datasets, so this is certainly an area in which I would investigate for further model improvments
 
 ### Model Training Duration
-I tried to reduce the amount of time spent training models, and so I choose a semi-arbitray 10 epochs for the ResNet model and 20 for the yolo model. These models could have benefitted greatly from longer training d
+I tried to reduce the amount of time spent training models, and so I choose a semi-arbitray 10 epochs for the ResNet model and 20 for the yolo model. These models could have benefitted greatly from longer training
+
+
+### Thanks! ヽ(ヅ)ノ
