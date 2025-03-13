@@ -1,0 +1,1 @@
+# Run the valuation scripts for each model and pretty print to console

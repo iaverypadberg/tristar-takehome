@@ -1,0 +1,5 @@
+data/
+trains/
+train/
+evals/
+yolo11m-cls.pt
